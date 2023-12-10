@@ -65,7 +65,7 @@ def main():
 	tf = iters*dt
 
 	for _ in range(iters):
-		sol = solve_ivp(func_with_lyaps,[0, dt],assemble(v,U),t_eval=[dt], args=(vin_0,ks,Tin,c,A0,a,d,L,kk,Dzero,n),max_step =dt)
+		sol = solve_ivp(func_with_lyaps,[0, dt],assemble(v,U),method='BDF',t_eval=[dt], args=(vin_0,ks,Tin,c,A0,a,d,L,kk,Dzero,n),max_step =dt)
 		v,U = (sol.y.flatten()[:2],sol.y.flatten()[2:].reshape(2,2))
 		U,R = np.linalg.qr(U)
 		lyaps.append(np.log(abs(R.diagonal()))/dt)
