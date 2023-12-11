@@ -71,8 +71,7 @@ def main():
 		i=i+1
 
 
-	plt.plot(T,X)
-	plt.plot(T,Y)
+	plt.plot(X,Y)
 	
 	return
 
