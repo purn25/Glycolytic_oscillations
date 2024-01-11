@@ -11,4 +11,4 @@ User Guide
 All codes need two input parameters: Amplitude, Input Period
 - deterministic_figure.py gives trajectory figure named "Trajectory_A..._Tin....png"
 - deterministic_findT.py gives the mean period of oscillations and standard deviation of period. If standard deviation of period is large, the period of oscillations is irregular,i.e., quasi-periodic or chaotic.
-- lyapunov_Benettin_realsys.py gives
+- lyapunov_Benettin_realsys.py gives the Lyapunov exponent.
