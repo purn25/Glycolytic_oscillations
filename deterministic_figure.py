@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 def f(t, y, arg):
     vin_0 = arg[0]
     ks = arg[1]
-    W = arg[2]
+    Tin = arg[2]
     c = arg[3]
     A0 = arg[4]
     a = arg[5]
@@ -29,7 +29,7 @@ def f(t, y, arg):
 def jac(t, y, arg):
     vin_0 = arg[0]
     ks = arg[1]
-    W = arg[2]
+    Tin = arg[2]
     c = arg[3]
     A0 = arg[4]
     a = arg[5]
