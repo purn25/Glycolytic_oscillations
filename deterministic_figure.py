@@ -72,10 +72,7 @@ def main():
 
 
 	plt.plot(X[10000:],Y[10000:])
-	print(X[10000:])
-	print(Y[10000:])
 	plt.savefig("Trajectory_A%.4lf_Tin%d.png"%(A0,Tin))
-	plt.show()
 	
 	return
 
