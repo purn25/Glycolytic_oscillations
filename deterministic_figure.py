@@ -52,7 +52,7 @@ def main():
 	Dzero = 0.0005
 	n = 8
 
-	t1 = 100000
+	t1 = 10000
 	dt = .01
 	y0 =[0,0]
 	t0 = 0
@@ -71,7 +71,7 @@ def main():
 		i=i+1
 
 
-	plt.plot(X,Y)
+	plt.plot(X[90000:],Y[90000:])
 	plt.show()
 	
 	return
