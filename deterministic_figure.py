@@ -72,6 +72,7 @@ def main():
 
 
 	plt.plot(X,Y)
+	plt.savefig("test.png")
 	
 	return
 
