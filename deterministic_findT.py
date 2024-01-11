@@ -75,7 +75,7 @@ def main():
 	Yrange = Y[8000000:]
 	PeriodList = []
 	for peak in range(len(Xrange)):
-		if round(Xrange[peak],5) == round(Xrange[0],5)and round(Yrange[peak],5) == round(Yrange[0],5):
+		if round(Xrange[peak],4) == round(Xrange[0],4)and round(Yrange[peak],4) == round(Yrange[0],4):
 			PeriodList.append(peak)
 	Period = []
 	perioddiff = np.diff(PeriodList)
