@@ -19,7 +19,11 @@ def f(t, y, arg):
     n = arg[10]
     X = y[0]
     Y = y[1]
-    return [vin_0+A0*math.sin(2*math.pi*t/Tin)-kk*a*X*n*Dzero*(1+a*X/(d+kk))**(n-1)*(1+(40)*Y)**n/((kk+d)*(L*(1+a*c*X/d)**n+((1+a*X/(d+kk))**n)*(1+40*Y)**n)),kk*a*X*n*Dzero*(1+a*X/(d+kk))**(n-1)*(1+40*Y)**n/((kk+d)*(L*(1+a*c*X/d)**n+((1+a*X/(d+kk))**n)*(1+40*Y)**n))-ks*Y]
+    if vin_0 + A0*math.sin(2*math.pi*t/Tin)<0:
+	    inputwave = 0
+    else:
+	    inputwave = vin_0+A0*math.sin(2*math.pi*t/Tin)
+    return [inputwave + vin_0+A0*math.sin(2*math.pi*t/Tin)-kk*a*X*n*Dzero*(1+a*X/(d+kk))**(n-1)*(1+(40)*Y)**n/((kk+d)*(L*(1+a*c*X/d)**n+((1+a*X/(d+kk))**n)*(1+40*Y)**n)),kk*a*X*n*Dzero*(1+a*X/(d+kk))**(n-1)*(1+40*Y)**n/((kk+d)*(L*(1+a*c*X/d)**n+((1+a*X/(d+kk))**n)*(1+40*Y)**n))-ks*Y]
 
 def jac(t, y, arg):
     vin_0 = arg[0]
