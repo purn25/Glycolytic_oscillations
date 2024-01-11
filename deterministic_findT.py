@@ -83,7 +83,7 @@ def main():
 		if perioddiff[peakdiff] > 2:
 			Period.append(perioddiff[peakdiff])
 	if Period !=[] and len(Period) > 1:
-		print(Tin,float(np.mean(Period)),float(np.std(Period)))
+		print(float(np.mean(Period)),float(np.std(Period)))
 
 
 	return
