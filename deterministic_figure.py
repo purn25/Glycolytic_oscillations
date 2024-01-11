@@ -61,7 +61,7 @@ def main():
 	Y = np.zeros( int(t1/dt)+1 )
 	T = np.zeros( int(t1/dt)+1 )
 	r = ode(f, jac).set_integrator('vode', method='bdf', with_jacobian=True)
-	r.set_initial_value(y0, t0).set_f_params([vin_0,ks,W,c,A0,a,d,L,kk,Dzero,n]).set_jac_params([vin_0,ks,W,c,A0,a,d,L,kk,Dzero,n])
+	r.set_initial_value(y0, t0).set_f_params([vin_0,ks,Tin,c,A0,a,d,L,kk,Dzero,n]).set_jac_params([vin_0,ks,Tin,c,A0,a,d,L,kk,Dzero,n])
 	i=0
 	while r.successful() and r.t < t1:
 		r.integrate(r.t+dt)
