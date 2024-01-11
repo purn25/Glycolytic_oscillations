@@ -71,7 +71,7 @@ def main():
 		i=i+1
 
 
-	plt.plot(X[90000:],Y[90000:])
+	plt.plot(X[10000:],Y[10000:])
 	plt.show()
 	
 	return
