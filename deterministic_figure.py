@@ -72,7 +72,7 @@ def main():
 
 
 	plt.plot(X,Y)
-	plt.savefig("Trajectory_A%.4lf_Tin%d.png"%(A0,Tin))
+	plt.show()
 	
 	return
 
