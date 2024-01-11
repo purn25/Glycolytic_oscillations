@@ -72,6 +72,8 @@ def main():
 
 
 	plt.plot(X[10000:],Y[10000:])
+	print(X[10000:])
+	print(Y[10000:])
 	plt.show()
 	
 	return
