@@ -35,7 +35,7 @@ def main():
 	ks = 0.05	
 	c = 0.01
 	A0 = float(sys.argv[1])
-        Tin = int(sys.argv[2])
+	Tin = int(sys.argv[2])
 	a = 2000
 	d = 100
 	L = 4000000000
