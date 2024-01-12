@@ -6,12 +6,13 @@ We study the effect of periodic glucose injection on glycolytic oscillations by 
 
 - lyapunov_Benettin_realsys.py (A Python script to calculate the Lyapunov exponent averaged over the N x driving period of glycolytic oscillations)
 
-<User Guide>
 
-All codes need two input parameters: Amplitude, Input Period
+All python scripts need two input parameters: (i) amplitude and (2) period of external driving. 
+In order to generate a dynamic trajectory, say, at input amplitude of   = 0.0025 mM/s (=0.5 υ_0) and period of T_ext=100 s, and calculate the resulting oscillatory period (T_obs) and two Lyapunov exponents, execute the script by typing the followings: 
 
-ex) deterministic_...py 0.003 100
+“python deterministic_figure.py 0.0025 100” --  generates a figure of trajectory,  “Trajectory_A0.0025_Tin100.png”
 
-- deterministic_figure.py gives trajectory figure named "Trajectory_A..._Tin....png"
-- deterministic_findT.py gives the mean period of oscillations and standard deviation of period. If standard deviation of period is large, the period of oscillations is irregular,i.e., quasi-periodic or chaotic.
-- lyapunov_Benettin_realsys.py gives the Lyapunov exponent.
+“python deteministic_findT.py 0.0025 100” -- calculates the mean period of oscillations (T_obs) and its standard deviation. If the standard deviation is large, it means that the trajectory is irregular, either quasi-periodic or chaotic.
+
+“python lyapunov_Benettin_realsys.py 0.0025 100” -- calculates the two Lyapunov exponents.
+
