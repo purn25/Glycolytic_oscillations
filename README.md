@@ -8,6 +8,8 @@ We study the effect of periodic glucose injection on glycolytic oscillations by 
 
 
 All python scripts need two input parameters: (i) amplitude and (2) period of external driving. 
+
+
 In order to generate a dynamic trajectory, say, at input amplitude of 0.0025 mM/s (=0.5 υ_0) and period of T_ext=100 s, and calculate the resulting oscillatory period (T_obs) and two Lyapunov exponents, execute the script by typing the followings: 
 
 “python deterministic_figure.py 0.0025 100” --  generates a figure of trajectory,  “Trajectory_A0.0025_Tin100.png”
