@@ -16,5 +16,5 @@ In order to generate a dynamic trajectory, say, at input amplitude of 0.0025 mM/
 
 “python deteministic_findT.py 0.0025 100” -- calculates the mean period of oscillations (T_obs) and its standard deviation. If the standard deviation is large, it means that the trajectory is irregular, either quasi-periodic or chaotic.
 
-“python lyapunov_Benettin_realsys.py 0.0025 100” -- calculates the two Lyapunov exponents.
+“python lyapunov_Benettin_realsys.py 0.0025 100” -- calculates the two Lyapunov exponents except 0. Our system subject to an external periodic driving can have three Lyapunov exponents, but the Lyapunov exponent corresponding external period is always 0.
 
