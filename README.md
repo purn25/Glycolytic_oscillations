@@ -1,4 +1,4 @@
-We study the effect of periodic glucose injection on glycolytic oscillations by using a allosteric model of phosphofructokinase proposed by Goldbeter. (A. Goldbeter and R. Lefever, Biophys. J. 12, 1302 (1972))
+We study the effect of periodic glucose injection on glycolytic oscillations by using an allosteric model of phosphofructokinase proposed by Goldbeter. (A. Goldbeter and R. Lefever, Biophys. J. 12, 1302 (1972))
 
 - deterministic_figure.py (A Python script to generate a trajectory of glycolytic oscillations)
 
